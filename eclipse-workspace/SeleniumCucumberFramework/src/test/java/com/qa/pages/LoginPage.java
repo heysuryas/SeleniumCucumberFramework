@@ -37,6 +37,12 @@ private WebElement loginbtn;
 @FindBy(xpath = "//span[@data-test='title']")
 private WebElement productlabel;
 
+@FindBy(xpath = "//div//h3[@data-test='error']")
+private WebElement errormsg;
+
+
+
+
 
 //Page actions
 
@@ -62,6 +68,14 @@ public boolean isHomePageDisplayed()
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     wait.until(ExpectedConditions.visibilityOf(productlabel));
     return productlabel.isDisplayed();
+}
+
+public String errormsgdisplayed()
+{
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+    wait.until(ExpectedConditions.visibilityOf(errormsg));
+    return errormsg.getText();
+   
 }
 
 }

@@ -34,4 +34,12 @@ public class LoginPageSteps {
     public void user_on_homepage() {
         Assert.assertTrue(login.isHomePageDisplayed());
     }
+    
+    @Then("Then User able to view invalid error message")
+    public void errormsg_isdisplayed() {
+    	Assert.assertEquals(login.errormsgdisplayed(),
+                "Epic sadface: Username and password do not match any user in this service");
+
 }
+}
+

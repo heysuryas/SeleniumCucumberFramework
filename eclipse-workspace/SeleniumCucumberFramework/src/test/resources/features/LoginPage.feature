@@ -8,8 +8,6 @@ Feature: Login Functionality
     And User clicks Login button
     Then User able to view home page
     
-    
-
 
   Scenario: UnSuccessful login with invalid credentials
     Given User login page is displayed

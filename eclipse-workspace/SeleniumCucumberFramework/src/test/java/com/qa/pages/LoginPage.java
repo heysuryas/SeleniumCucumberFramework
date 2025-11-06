@@ -42,8 +42,6 @@ private WebElement errormsg;
 
 
 
-
-
 //Page actions
 
 public void enterusername(String Username)
@@ -63,12 +61,14 @@ public void click_loginbtn()
 	loginbtn.click();
 }
 
+
 public boolean isHomePageDisplayed()
 {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
     wait.until(ExpectedConditions.visibilityOf(productlabel));
     return productlabel.isDisplayed();
 }
+
 
 public String errormsgdisplayed()
 {
@@ -77,5 +77,7 @@ public String errormsgdisplayed()
     return errormsg.getText();
    
 }
+
+
 
 }

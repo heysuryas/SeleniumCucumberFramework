@@ -1,27 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-05T17:50:27 IST" name="Default suite" finished-at="2025-11-05T17:50:28 IST" duration-ms="542">
+  <suite started-at="2025-11-06T15:29:32 IST" name="Default suite" finished-at="2025-11-06T15:30:01 IST" duration-ms="28668">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.qa.runner.TestRunner@1ff4931d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-11-05T17:50:27 IST" name="Default test" finished-at="2025-11-05T17:50:28 IST" duration-ms="542">
+    <test started-at="2025-11-06T15:29:32 IST" name="Default test" finished-at="2025-11-06T15:30:01 IST" duration-ms="28668">
       <class name="com.qa.runner.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.qa.runner.TestRunner@1ff4931d]" started-at="2025-11-05T17:50:27 IST" name="setUpClass" finished-at="2025-11-05T17:50:28 IST" duration-ms="485" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.qa.runner.TestRunner@1ff4931d]" started-at="2025-11-06T15:29:32 IST" name="setUpClass" finished-at="2025-11-06T15:29:33 IST" duration-ms="488" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@18a3962d]]>
+                <![CDATA[org.testng.TestRunner@6e041285]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.qa.runner.TestRunner@1ff4931d]" started-at="2025-11-05T17:50:28 IST" name="tearDownClass" finished-at="2025-11-05T17:50:28 IST" duration-ms="27" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.qa.runner.TestRunner@1ff4931d]" started-at="2025-11-06T15:29:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-06T15:29:36 IST" duration-ms="2658" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.qa.runner.TestRunner@1ff4931d]" started-at="2025-11-06T15:29:36 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-06T15:29:38 IST" duration-ms="2023" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["UnSuccessful login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.qa.runner.TestRunner@1ff4931d]" started-at="2025-11-06T15:29:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-11-06T15:30:01 IST" duration-ms="23403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["product filter and Art to cart functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Unknown"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.qa.runner.TestRunner@1ff4931d]" started-at="2025-11-06T15:30:01 IST" name="tearDownClass" finished-at="2025-11-06T15:30:01 IST" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

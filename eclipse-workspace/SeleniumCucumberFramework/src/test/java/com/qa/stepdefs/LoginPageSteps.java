@@ -2,6 +2,8 @@ package com.qa.stepdefs;
 
 import com.qa.base.BaseClass;
 import com.qa.pages.LoginPage;
+import com.qa.utils.TestUtils;
+
 import io.cucumber.java.en.*;
 import org.testng.Assert;
 
@@ -11,9 +13,7 @@ public class LoginPageSteps {
     @Given("User login page is displayed")
     public void user_on_loginpage() {
         BaseClass.driver.get("https://www.saucedemo.com/");
-        login = new LoginPage(BaseClass.driver);
-        
-    }
+        login = new LoginPage(BaseClass.driver);    }
 
     @When("User enters {string} as username")
     public void user_enters_username(String username) {
@@ -35,11 +35,13 @@ public class LoginPageSteps {
         Assert.assertTrue(login.isHomePageDisplayed());
     }
     
-    @Then("Then User able to view invalid error message")
+    @Then("User able to view invalid error message")
     public void errormsg_isdisplayed() {
-    	Assert.assertEquals(login.errormsgdisplayed(),
-                "Epic sadface: Username and password do not match any user in this service");
+   
+            Assert.assertEquals(login.errormsgdisplayed(),
+                    "Epic sadface: Username and password do not match any user in this service");
+     
+}
+}
 
-}
-}
 

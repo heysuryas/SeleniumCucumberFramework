@@ -7,12 +7,7 @@ Feature:
     And User clicks Login button
     Then User able to view home page
 
-
-
-
-
-
-
+@smoke
 Scenario: product filter and Art to cart functionality 
     Given User homepage is displayed
     When User clicks product filter dropdown

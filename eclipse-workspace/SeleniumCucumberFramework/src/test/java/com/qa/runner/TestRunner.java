@@ -14,8 +14,8 @@ import io.cucumber.testng.CucumberOptions;
          // Optional Extent report
     },
     monochrome = true,                             // Better console readability
-    dryRun = false                               // To check mapping without running browser
-//    tags = "@smoke"                                // Run specific tag (optional)
+    dryRun = false,                               // To check mapping without running browser
+    tags = "@smoke"                                // Run specific tag (optional)
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 }
